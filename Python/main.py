@@ -101,7 +101,7 @@ class UIFunctions(MainWindow):
                 self.ui.text_edit_text.textChanged.connect(lambda: UIFunctions.convert_text_to_binary(self))
 
 
-    def convert_text_to_binary(self): # Conver Text to Binary
+    def convert_text_to_binary(self): # Convert Text to Binary
         contents = self.ui.text_edit_text.toPlainText() # Current Entry Data
         
         self.ui.text_edit_binary.textChanged.disconnect()
