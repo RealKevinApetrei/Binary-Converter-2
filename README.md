@@ -61,7 +61,7 @@ Requirements:
   **For Python3: `pip3 install pyside2`**\
 
 # Installation
-**INFO: Windows 10 executable downloadable from [here](https://github.com/RealKevinApetrei/Binary-Converter-2/releases) or [here](https://github.com/RealKevinApetrei/Binary-Converter-2/tree/main/Windows%2010%20(Executable))**
+**INFO: Windows 10 executable downloadable from [here](https://github.com/RealKevinApetrei/Binary-Converter-2/releases) or [here](https://github.com/RealKevinApetrei/Binary-Converter-2/tree/main/Windows)**
 
 1. Make sure you have correctly completed the [Prerequisites](#prerequisites).
 2. Clone the repository\
