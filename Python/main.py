@@ -2,6 +2,8 @@
 # MADE BY KEVIN APETREI # MADE BY KEVIN APETREI # MADE BY KEVIN APETREI #
 # ///////////////////////////////////////////////////////////////////// #
 
+# pylint: disable=E1101
+
 import sys
 
 from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
