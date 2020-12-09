@@ -7,7 +7,7 @@
 import sys
 
 from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
-    QRect, QSize, QUrl, Qt)
+    QRect, QSize, QUrl, Qt, QPropertyAnimation, QEasingCurve)
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
     QFontDatabase, QIcon, QLinearGradient, QPalette, QPainter, QPixmap,
     QRadialGradient)
@@ -30,11 +30,7 @@ class MainWindow(QMainWindow): # Main Window
         # Move Window
         def move_window(event):
             # Restore Window (before movement)
-            if UIFunctions.return_status(self) == 1: # If maximized
-                UIFunctions.maximize_restore(self)
-                # QCursor.setPos(self.previous_cursor_pos)
-
-            if event.buttons() == Qt.LeftButton: # If Left Click (move window)
+            if event.buttons() == Qt.LeftButton and UIFunctions.return_status(self) != 1: # If Left Click (move window) (and not maximized)
                 self.move(self.pos() + event.globalPos() - self.dragPos)
                 self.dragPos = event.globalPos()
                 event.accept()
@@ -59,8 +55,6 @@ class UIFunctions(MainWindow):
         if status == 0: # If maximized
             GLOBAL_STATE = 1
 
-            # self.previous_cursor_pos = QCursor.pos()
-            # print(self.previous_cursor_pos)
             self.showMaximized()
 
             # Remove Margins and Border Radius
@@ -115,6 +109,28 @@ class UIFunctions(MainWindow):
                 self.ui.text_edit_binary.setPlainText(" ".join(binary_list)) # Set converted data
                 self.ui.text_edit_binary.textChanged.connect(lambda: UIFunctions.convert_binary_to_text(self))
 
+    def toggle_menu(self, maxWidth, enable): # Toggle Menu Bar
+        if enable:
+            # Get Width
+            width = self.ui.frame_pages.width()
+            maxExtend = maxWidth
+            standard = 0
+
+            # Set Max Width
+            if width == 0:
+                widthExtended = maxExtend
+            else:
+                widthExtended = standard
+            
+            # Animation
+            self.animation = QPropertyAnimation(self.ui.frame_pages, b"minimumWidth")
+            self.animation.setDuration(400)
+            self.animation.setStartValue(width)
+            self.animation.setEndValue(widthExtended)
+            self.animation.setEasingCurve(QEasingCurve.InOutQuart)
+            self.animation.start()
+
+    
     def return_status(self): # Return window status (if maximized or restarted)
         return GLOBAL_STATE
 
@@ -147,6 +163,15 @@ class UIFunctions(MainWindow):
 
         # Detect change in Text
         self.ui.text_edit_text.textChanged.connect(lambda: UIFunctions.convert_text_to_binary(self))
+
+        # Toggle Menu Bar
+        self.ui.button_menu_toggle.clicked.connect(lambda: UIFunctions.toggle_menu(self, 100, True))
+
+        # Pages
+            # Home Page
+        self.ui.home_page.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_home))
+            # Credits Page
+        self.ui.credits_page.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_credits))
 
         # Create size grip to resize window
         self.sizegrip = QSizeGrip(self.ui.frame_grip)
