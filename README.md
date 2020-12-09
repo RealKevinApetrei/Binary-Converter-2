@@ -101,3 +101,6 @@ Project Link: https://github.com/RealKevinApetrei/Binary-Converter-2/
 - All rights reserved
 - Using PySide2
 - Using Qt Designer
+
+- Menu Bar Icon by [Pixel Perfect](https://www.flaticon.com/authors/pixel-perfect).
+- File Icon by [DinosoftLabs](https://www.flaticon.com/authors/dinosoftlabs).
