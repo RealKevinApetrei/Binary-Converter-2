@@ -21,7 +21,7 @@
 
 # About the Project
 ## Information
-![BinaryConverterShowcase](https://user-images.githubusercontent.com/65184258/101281734-a370d600-37c8-11eb-8a5d-b23fd0cc4003.gif)
+![BinaryConverterShowcase2](https://user-images.githubusercontent.com/65184258/101662192-1c7a6280-3a41-11eb-9765-8c26c45de68f.gif)
 
 This project is an updated version of my Binary Converter. Instead of using Tkinter, I have used PySide2 to make a more modern design.
 I will start using PySide2 and PyQt5 for my future projects.
