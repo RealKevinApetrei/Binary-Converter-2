@@ -21,14 +21,14 @@
 
 # About the Project
 ## Information
-![BinaryConverterShowcase](https://user-images.githubusercontent.com/65184258/101281734-a370d600-37c8-11eb-8a5d-b23fd0cc4003.gif)
+![BinaryConverterShowcase2](https://user-images.githubusercontent.com/65184258/101662192-1c7a6280-3a41-11eb-9765-8c26c45de68f.gif)
 
 This project is an updated version of my Binary Converter. Instead of using Tkinter, I have used PySide2 to make a more modern design.
 I will start using PySide2 and PyQt5 for my future projects.
 
 The program supports live Binary to Text and Text to Binary conversion as you are typing. There are still quite a few bugs which I am looking to fix so the program can be fully functional, however, the intended features are available!
 
-Please see [changelog](https://github.com/RealKevinApetrei/Binary-Converter-2/blob/main/CHANGELOG.md) for details on updates.
+Please see [changelog](https://github.com/RealKevinApetrei/Binary-Converter-2/blob/master/CHANGELOG.md) for details on updates.
 
 **DISCLAIMER: This program is still in *BETA* and may have certain bugs. Minimal features are available.**\
 
