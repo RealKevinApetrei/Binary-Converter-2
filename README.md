@@ -28,7 +28,7 @@ I will start using PySide2 and PyQt5 for my future projects.
 
 The program supports live Binary to Text and Text to Binary conversion as you are typing. There are still quite a few bugs which I am looking to fix so the program can be fully functional, however, the intended features are available!
 
-Please see [changelog](https://github.com/RealKevinApetrei/Binary-Converter-2/blob/main/CHANGELOG.md) for details on updates.
+Please see [changelog](https://github.com/RealKevinApetrei/Binary-Converter-2/blob/master/CHANGELOG.md) for details on updates.
 
 **DISCLAIMER: This program is still in *BETA* and may have certain bugs. Minimal features are available.**\
 
