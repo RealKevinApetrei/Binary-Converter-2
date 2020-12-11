@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'qt_ui_betakieZGz.ui'
+## Form generated from reading UI file 'qt_ui_betarZxwEi.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.1
 ##
@@ -210,7 +210,74 @@ class Ui_MainWindow(object):
         font3.setBold(True)
         font3.setWeight(75)
         self.page_home.setFont(font3)
-        self.page_home.setStyleSheet(u"background-color: none;")
+        self.page_home.setStyleSheet(u"/* VERTICAL SCROLLBAR */\n"
+" QScrollBar:vertical {\n"
+"	border: none;\n"
+"    background: rgb(7, 174, 177);\n"
+"    width: 14px;\n"
+"    margin: 15px 0 15px 0;\n"
+"	border-radius: 0px;\n"
+" }\n"
+"\n"
+"/*  HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:vertical {	\n"
+"	background-color: rgb(12, 109, 136);\n"
+"	min-height: 30px;\n"
+"	border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:vertical:hover{	\n"
+"	background-color: rgb(15, 146, 182);\n"
+"}\n"
+"QScrollBar::handle:vertical:pressed {	\n"
+"	background-color: rgb(9, 158, 148);\n"
+"}\n"
+"\n"
+"/* BTN TOP - SCROLLBAR */\n"
+"QScrollBar::sub-line:vertical {\n"
+"	border: none;\n"
+"	background-color: rgb(6, 154, 124);\n"
+"	height: 15px;\n"
+"	border-top-left-radius: 7px;\n"
+"	border-top-right-radius: 7px;\n"
+"	subcontrol-position: top;\n"
+"	subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::sub-line:vertical:hover {	\n"
+"	background-color: rgb(6, 197, 156);\n"
+"}\n"
+"QScrollBar::sub-line:vertical:pressed {	\n"
+"	background-color: rgb(4, 115, 91);\n"
+"}\n"
+"\n"
+"/* BTN BO"
+                        "TTOM - SCROLLBAR */\n"
+"QScrollBar::add-line:vertical {\n"
+"	border: none;\n"
+"	background-color: rgb(6, 154, 124);\n"
+"	height: 15px;\n"
+"	border-bottom-left-radius: 7px;\n"
+"	border-bottom-right-radius: 7px;\n"
+"	subcontrol-position: bottom;\n"
+"	subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::add-line:vertical:hover {	\n"
+"	background-color: rgb(6, 197, 156);\n"
+"}\n"
+"QScrollBar::add-line:vertical:pressed {	\n"
+"	background-color: rgb(4, 115, 91);\n"
+"}\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"	background: none;\n"
+"}\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"	background: none;\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"")
         self.gridLayout = QGridLayout(self.page_home)
         self.gridLayout.setObjectName(u"gridLayout")
         self.gridLayout.setContentsMargins(9, 15, -1, -1)
@@ -255,31 +322,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.addWidget(self.label_ascii)
 
 
-        self.gridLayout.addWidget(self.frame_info_ascii, 1, 2, 1, 1)
-
-        self.text_edit_text = QTextEdit(self.page_home)
-        self.text_edit_text.setObjectName(u"text_edit_text")
-        font6 = QFont()
-        font6.setFamily(u"Berlin Sans FB")
-        font6.setPointSize(14)
-        font6.setBold(False)
-        font6.setWeight(50)
-        self.text_edit_text.setFont(font6)
-        self.text_edit_text.viewport().setProperty("cursor", QCursor(Qt.IBeamCursor))
-        self.text_edit_text.setStyleSheet(u"QTextEdit{\n"
-"	background-color: rgb(99, 143, 143);\n"
-"}\n"
-"QTextEdit:hover{\n"
-"	background-color: rgb(115, 166, 166)\n"
-"}\n"
-"\n"
-"QScrollBar{\n"
-"	background-color: rgb(134, 193, 193);\n"
-"}")
-        self.text_edit_text.setTabChangesFocus(False)
-        self.text_edit_text.setReadOnly(False)
-
-        self.gridLayout.addWidget(self.text_edit_text, 0, 2, 1, 1)
+        self.gridLayout.addWidget(self.frame_info_ascii, 1, 3, 1, 1)
 
         self.frame_info_binary = QFrame(self.page_home)
         self.frame_info_binary.setObjectName(u"frame_info_binary")
@@ -309,6 +352,30 @@ class Ui_MainWindow(object):
 
 
         self.gridLayout.addWidget(self.frame_info_binary, 1, 1, 1, 1)
+
+        self.text_edit_text = QTextEdit(self.page_home)
+        self.text_edit_text.setObjectName(u"text_edit_text")
+        font6 = QFont()
+        font6.setFamily(u"Berlin Sans FB")
+        font6.setPointSize(14)
+        font6.setBold(False)
+        font6.setWeight(50)
+        self.text_edit_text.setFont(font6)
+        self.text_edit_text.viewport().setProperty("cursor", QCursor(Qt.IBeamCursor))
+        self.text_edit_text.setStyleSheet(u"QTextEdit{\n"
+"	background-color: rgb(99, 143, 143);\n"
+"}\n"
+"QTextEdit:hover{\n"
+"	background-color: rgb(115, 166, 166)\n"
+"}\n"
+"\n"
+"QScrollBar{\n"
+"	background-color: rgb(134, 193, 193);\n"
+"}")
+        self.text_edit_text.setTabChangesFocus(False)
+        self.text_edit_text.setReadOnly(False)
+
+        self.gridLayout.addWidget(self.text_edit_text, 0, 3, 1, 1)
 
         self.text_edit_binary = QTextEdit(self.page_home)
         self.text_edit_binary.setObjectName(u"text_edit_binary")
@@ -516,8 +583,8 @@ class Ui_MainWindow(object):
         self.home_page.setText(QCoreApplication.translate("MainWindow", u"Home Page", None))
         self.credits_page.setText(QCoreApplication.translate("MainWindow", u"Credits Page", None))
         self.label_ascii.setText(QCoreApplication.translate("MainWindow", u"Text", None))
-        self.text_edit_text.setDocumentTitle("")
         self.label_binary.setText(QCoreApplication.translate("MainWindow", u"Binary", None))
+        self.text_edit_text.setDocumentTitle("")
         self.text_edit_binary.setDocumentTitle("")
         self.credits_label.setText(QCoreApplication.translate("MainWindow", u"By Kevin Apetrei", None))
         self.button_menu_toggle.setText("")
