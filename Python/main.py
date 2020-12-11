@@ -15,7 +15,6 @@ from PySide2.QtWidgets import *
 
 from files.ui_main import Ui_MainWindow
 
-
 GLOBAL_STATE = 0
 
 
@@ -116,7 +115,7 @@ class UIFunctions(MainWindow):
             maxExtend = maxWidth
             standard = 0
 
-            # Set Max Width
+            # Set Max Width 
             if width == 0:
                 widthExtended = maxExtend
             else:

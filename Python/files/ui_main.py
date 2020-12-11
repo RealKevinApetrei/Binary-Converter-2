@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'qt_ui_betaccUPwM.ui'
+## Form generated from reading UI file 'qt_ui_betakieZGz.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.1
 ##
@@ -15,6 +15,7 @@ from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
     QRadialGradient)
 from PySide2.QtWidgets import *
 
+from . import icons_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -22,7 +23,7 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1051, 762)
         icon = QIcon()
-        icon.addFile(u"C:/Users/realk/Desktop/index.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/file_icon.png", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -413,8 +414,7 @@ class Ui_MainWindow(object):
 "	background-color: rgb(143, 207, 207);\n"
 "}")
         icon1 = QIcon()
-        icon1.addFile(u"C:/Users/realk/Downloads/menu.png", QSize(), QIcon.Normal, QIcon.Off)
-        icon1.addFile(u"C:/Users/realk/Downloads/imageedit_3_6656573688.png", QSize(), QIcon.Selected, QIcon.On)
+        icon1.addFile(u":/images/menu_icon.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_menu_toggle.setIcon(icon1)
         self.button_menu_toggle.setIconSize(QSize(32, 32))
 
@@ -521,6 +521,6 @@ class Ui_MainWindow(object):
         self.text_edit_binary.setDocumentTitle("")
         self.credits_label.setText(QCoreApplication.translate("MainWindow", u"By Kevin Apetrei", None))
         self.button_menu_toggle.setText("")
-        self.label_credits.setText(QCoreApplication.translate("MainWindow", u"Made by Kevin Apetrei | v.0.96-beta", None))
+        self.label_credits.setText(QCoreApplication.translate("MainWindow", u"Made by Kevin Apetrei | v.0.96-beta1", None))
     # retranslateUi
 
